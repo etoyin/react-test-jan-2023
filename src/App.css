@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+}  
+.body{
+    padding: 0;
+    margin: 0;
+}  
+  .leftSidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00152F;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  .leftSidenav > div:hover{
+      background-color: #157CB0;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border: 1px solid #E9EEF1;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+  }
+  
+  .leftSidenav a {
+    padding: 20px 20px 20px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  .logo{
+      font-size: 25px !important;
+  }
+  .sidenav a:hover, .leftSidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main{
+      margin-left: 243px;
+  }
+.top1{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 40px;
+    background-color: #d0e3f7;
+    height: 41px;
+    border: 1px solid #3D92EC;
+}
+.top1 > .content{
+    font-weight: bold;
+    /* background-color: #157CB0; */
+}
+.gt{
+    color: #3D92EC;
+}
+.it{
+    color: #6a6b6d;
+    font-weight: lighter;
+}
+.top2{
+    padding: 10px 0 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    border-bottom: 1px solid #cacbcc;
+}
+.error{
+    font-size: 10px;
+    line-height: 2px;
+    color: red
+}
+.content-right-inner{
+    display: flex;
+}
+.content-right-inner > div{
+    margin-right: 30px;
+    padding: 0 15px 0 15px;
+}
+.content > h3{
+    line-height: 10px;
+}
+.content > p{
+    font-size: 13px;
+    line-height: 5px;
+}
+.plus-icon, .menu-icon, .fa-search{
+    font-size: 25px;
+    color: #3D92EC;
+    cursor: pointer;
+}
+.plus-icon:hover{
+    background-color: #3D92EC;
+    color: #ffffff;
+}
+.search-bar, .plus-icon{
+    border: 1px solid #3D92EC;
+}
+.search-bar > input, .side-body > div > div > textarea{
+    border: none;
+    height: 93%;
+}
+.search-bar > input:focus, .side-body > div > div > textarea:focus{
+    outline: none;
+}
+.center-word{
+    padding-top: 200px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    /* line-height: 10px; */
+    /* background-color: #8b94a7; */
+}
+.header > p{
+    font-size: 13px;
+    color: #8b94a7;
+}
+.center-word > p > span{
+    color: #3D92EC;
+}
+.center-word > p{
+    font-size: 13px;
+}
+.center-word > button{
+    padding: 20px;
+    width: 200px;
+    background-color: #0C67A0;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+}
+/* ========================================================================= */
+
+.top-nav{
+    display: flex;
+    align-items: center;
+    /* height: 70px; */
+    border-bottom: 1px solid #cacbcc;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #eff0f3;
+    margin-top: -10px;
+}
+.top-nav > div{
+    margin-right: 20px;
+}
+.top-nav > .reset{
+    margin-left: auto; 
+    margin-right: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color:#3D92EC;
+}
+.header > h4{
+    line-height: 10px;
+}
+.header > p{
+    line-height: 10px;
+    margin-top: -10px;
+    /* background-color: #3D92EC; */
+}
+.side-body > div{
+    border-bottom: 1px solid #cacbcc;
+    padding: 15px;
+    font-weight: bold;
+}
+.side-body > div > .text-area{
+    margin-top: 20px;
+    border: 1px solid #cacbcc;
+    padding: 5px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+</head>
+<body>
+<div class="body">
+    <div id="leftSidenav" class="leftSidenav">
+        <div>
+            <a class="logo" href="#">Logo</a>
+        </div>
+        <div>
+            <a href="#">Item Search</a>
+        </div>
+        <div>
+            <a href="#">Item</a>
+        </div>
+        <div>
+            <a href="#">Item</a>
+        </div>
+        <div>
+            <a href="#">Item</a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="top-nav">
+            <div onclick="closeNav()" class="menu-icon">&#9776;</div>
+            <div class="header">
+                <h4>Set Parameters</h4>
+                <p>3 parameters available</p>
+            </div>
+            <div class="reset">
+                <p>Reset all</p>
+            </div>
+        </div>
+        <div class="side-body">
+            <div class="item">
+                Item
+                <div class="text-area">
+                    <textarea id="item" cols="40" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="order">
+                Order
+                <div class="text-area">
+                    <textarea id="order" cols="40" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="3rd">
+                Type
+                <div class="">
+                    <div class="cao">
+                        <input type="checkbox" name="cao" id="cao"> CAO
+                    </div>
+                    <div class="edf">
+                        <input type="checkbox" name="edf" id="edf"> EDF
+                    </div>
+                    <div class="sfo">
+                        <input type="checkbox" name="sfo" id="sfo"> SFO
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="top1">
+            <div class="content">
+                HOME <span class="gt">></span> OC <span class="gt">></span> <span  class="it">Item Search</span>
+            </div>
+        </div>
+        <div class="top2">
+            <div class="content">
+                <h3>Item search</h3>
+                <p>0 items</p>
+            </div>
+            <div class="content-right">
+                <div class="search-bar">
+                    <input type="text"><i class="fa fa-search"></i>
+                </div>
+                <div class="plus-icon">&#43;</div>
+                <div onclick="openNav()" class="menu-icon">&#9776;</div>
+            </div>
+        </div>
+
+        <div class="center-word">
+            <div class="header">
+                <h2>What are you looking for?</h2>
+                <p>Get started by searching and filtering a few</p>
+            </div>
+            <button>Fetch data</button>
+            <p>or <span>search for an item</span></p>
+        </div>
+        
+    </div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "450px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+</body>
+</html> 
